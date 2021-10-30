@@ -59,6 +59,7 @@ case "$1" in
 		options
 	;;
 	*)
+		echo "Option not found!"
 		options
 	;;	
 esac
