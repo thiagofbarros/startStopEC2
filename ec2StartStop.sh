@@ -20,7 +20,7 @@ options() {
 	start    	Start instance \n \
 	stop     	Stop instance \n \
 	status   	Show instance state \n \
-	publicip 	Show Public IP
+	publicip 	Show Public IP \n \
 	help 		Show help"
 }
 
