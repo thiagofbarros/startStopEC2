@@ -20,7 +20,8 @@ options() {
 	start    	Start instance \n \
 	stop     	Stop instance \n \
 	status   	Show instance state \n \
-	publicip 	Show Public IP"
+	publicip 	Show Public IP
+	help 		Show help"
 }
 
 REGION=us-east-1
