@@ -1,5 +1,9 @@
 #!/bin/bash
 
+### Definir região da AWS
+REGION=us-east-1
+EC2INSTANCE=$2
+
 getEC2Status() {
 	aws --region $REGION ec2 describe-instances --instance-ids $EC2INSTANCE \
 		--query "Reservations[].Instances[].State[].Name" --output text
@@ -24,8 +28,6 @@ options() {
 	help 		Show help"
 }
 
-REGION=us-east-1
-EC2INSTANCE=$2
 EC2STATE=$(getEC2Status)
 
 case "$1" in
